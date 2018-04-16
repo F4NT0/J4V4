@@ -1,8 +1,12 @@
-public class ifelseClasse {
+/**
+ * Esta classe foi criada para testar os tipos diferentes de if-else que podem ser implementados
+ * A ideia é que ele retorne um boolean dependendo se os valores são iguais ou nao
+ */
+public class ifelseClasse implements Imprimir{//feita a implementação da classe interface Imprimir
 
     private int valor1; //iniciado uma variável privada para adicionar um valor
     private int valor2; //iniciado uma variável privada para adicionar um valor
-    private String resposta;
+    private boolean resposta;
 
     /**
      * Método construtor da classe, onde são iniciados as variaveis privadas
@@ -29,7 +33,7 @@ public class ifelseClasse {
     /**
      * Método para retornar a String  da resposta
      */
-    public String getResposta(){return resposta;}
+    public boolean getResposta(){return resposta;}
 
     /**
      * Método para alterar o valor de valor1 para poder fazer diferentes testes
@@ -46,51 +50,51 @@ public class ifelseClasse {
 
 
     /**
-     * Método de if-else onde verifica se o valor1 é igual que o valor2, utilizando sua construcao comum
-     * @param valor1
-     * @param valor2
+     * Método de if-else onde verifica se o valor1 é igual ou maior que o valor2, utilizando sua construcao comum
+     * @param v1
+     * @param v2
      *
      */
-    public void  testeIfElseComum(int valor1, int valor2){
-         if(valor1 == valor2) {
-             resposta = "Valor1 é igual o Valor2";
-
-         }
-         else{
-             resposta =  "Valor1 não é igual o valor2";
-
-         }
+    public boolean  testeIfElseComum(int v1, int v2){
+         if(v1 == v2) {resposta = true;}
+         else{resposta = false;}
+         return resposta;
     }
 
     /**
      * Método para verificar se os valores são iguais ou não, usando um if-else sem chaves
-     * @param valor1
-     * @param valor2
+     * @param v1
+     * @param v2
      *
      */
-    public void  testeIfElseSemChaves(int valor1,int valor2){
-        if(valor1 == valor2)
-            resposta = "Valor1 é igual o Valor2";
+    public boolean testeIfElseSemChaves(int v1,int v2){
+        if(v1 == v2)
+            resposta = true;
         else
-           resposta = "Valor1 não é igual o Valor2";
-
+           resposta = false;
+     return resposta;
     }
 
     /**
      * Método para verificar se os valores são iguais ou não, usando um if-else com condição
-     * @param valor1
-     * @param valor2
+     * @param v1
+     * @param v2
      *
      */
-    public void testeIfElseCondicao(int valor1,int valor2){
-        resposta = (valor1 == valor2)?"Valor1 é igual o Valor2":"Valor1 não é igual o Valor2";
+    public boolean testeIfElseCondicao(int v1,int v2){
+        resposta = (v1 == v2)?true:false;
+        return resposta;
     }
 
-    @Override
-    public String toString(){
-        return getResposta() + " e o Valor1 vale " + getValor1() + " Valor2 vale " + getValor2();
-    }
 
+    /**
+     * Foi inicializado o método da classe interface Imprimir
+     * neste caso ele só imprimi os numeros e a resposta em booleano para testes
+     * @return
+     */
+    public void imprimir(){
+        System.out.println(getValor1() + " " + getValor2());
+    }
 
 
 }
