@@ -1,4 +1,4 @@
-public class switchCaseClasse {
+public class switchCaseClasse implements Imprimir{ //implementado a classe interface imprimir
     private int valor1; //iniciado a variavel privada valor1
     private int valor2; //iniciado a variavel privada valor2
 
@@ -70,5 +70,14 @@ public class switchCaseClasse {
             default : System.out.println("Não deu um valor inteiro até 100");
         }
     }
+
+    /**
+     * Este método foi implementado através da classe Interface Imprimir
+     * ele nesta classe só retorna o valor das variaveis que foram usados no método switchCase
+     */
+    public void imprimir(){
+        System.out.println(getValor1() + " + " + getValor2() + " : ");
+    }
+
 
 }

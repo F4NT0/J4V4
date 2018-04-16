@@ -56,9 +56,9 @@ public class ifelseClasse implements Imprimir{//feita a implementação da class
      *
      */
     public boolean  testeIfElseComum(int v1, int v2){
-         if(v1 == v2) {resposta = true;}
-         else{resposta = false;}
-         return resposta;
+         if(v1 == v2) {resposta = true; return resposta;}
+         else{resposta = false; return resposta;}
+
     }
 
     /**
@@ -72,7 +72,9 @@ public class ifelseClasse implements Imprimir{//feita a implementação da class
             resposta = true;
         else
            resposta = false;
-     return resposta;
+
+        return resposta;
+
     }
 
     /**
