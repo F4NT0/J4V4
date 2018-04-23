@@ -1,7 +1,4 @@
 # Bem vindo ao Repositório de Informações sobre a Linguagem Java
-
-![alt text](https://imasters.com.br/wp-content/uploads/2018/03/JV.jpg)
-
 ---
 A **informação Teórica** sobre a Linguagem Java se encontra na Wiki deste Repositório:
    * Para Acessar a Wiki [Clique Aqui](https://github.com/F4NT0/Java_Basics/wiki)
@@ -14,4 +11,7 @@ Os **Códigos** de Teste sobre a Linguagem Java Orientada a Objetos se Encontra 
    * Para mais Informações sobre Matemática na Computação [Clique Aqui](https://github.com/F4NT0/Math_To_Code)
 
 ---
+
+![alt text](https://imasters.com.br/wp-content/uploads/2018/03/JV.jpg)
+
 
