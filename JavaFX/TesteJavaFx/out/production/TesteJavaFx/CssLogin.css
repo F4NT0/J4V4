@@ -1,0 +1,26 @@
+.root{
+  -fx-background-image: url("black-color.jpg");
+}
+
+.Text{
+   -fx-font-size: 16px;
+   -fx-font-wight: bold;
+}
+
+.areaDeTexto{
+   -fx-text-inner-color: green;
+   -fx-control-inner-background: black;
+}
+
+.PasswordField{
+   -fx-text-inner-color: green;
+   -fx-control-inner-background: black;
+}
+
+.botao{
+    -fx-text-inner-color: red;
+    -fx-text-fill: red;
+    -fx-control-innet-background: black;
+    -fx-background-color: black;
+    -fx-border-color: red;
+}
