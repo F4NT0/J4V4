@@ -24,3 +24,14 @@
     -fx-background-color: black;
     -fx-border-color: red;
 }
+
+.TextArea{
+    -fx-control-inner-background: black;
+    -fx-text-fill: lightgreen;
+    -fx-prompt-text-fill: blue;
+}
+
+.Label{
+    -fx-text-fill: limegreen;
+    -fx-font-size: 14px;
+}
