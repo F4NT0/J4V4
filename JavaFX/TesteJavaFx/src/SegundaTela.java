@@ -179,7 +179,7 @@ public class SegundaTela extends Application{
 
         //Testando se o Gif existe
 
-        Image imagem = new Image(new FileInputStream("/home/16105016/Área de Trabalho/TesteJavaFx/src/matrixCube.gif"));
+        Image imagem = new Image(new FileInputStream("/home/16105016/Área de Trabalho/Java_Basics/JavaFX/TesteJavaFx/src/matrixCube.gif"));
 
        //adicionando o gif no sistema
         ImageView imageView = new ImageView(imagem);
