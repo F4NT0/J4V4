@@ -8,6 +8,8 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
+import javafx.scene.input.KeyCode;
+import javafx.scene.input.KeyEvent;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.paint.Color;
@@ -15,6 +17,8 @@ import javafx.scene.text.Font;
 import javafx.scene.text.FontWeight;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
+
+import java.io.FileNotFoundException;
 
 /**
  * Criando em JavaFX uma tela de login
@@ -40,6 +44,20 @@ public class FantoMatrix extends Application{
             textoDeAcao.setFill(Color.FIREBRICK);
             textoDeAcao.setFont(Font.font("Courier New", FontWeight.NORMAL,18));
              return false;
+        }
+    }
+
+    /**
+     * Método para chamar a segunda Tela
+     */
+    public void chamadaTela(){
+        SegundaTela novo = new SegundaTela();
+        Stage tela2 = new Stage();
+        try {
+            novo.start(tela2);
+        }
+        catch (FileNotFoundException x){
+            System.err.println("Erro de Chamada" + x);
         }
     }
 
@@ -109,14 +127,25 @@ public class FantoMatrix extends Application{
             botao.setOnAction(e -> {
                 verSenha(areaDaSenha, textoDeAcao);
                 if(verSenha(areaDaSenha,textoDeAcao)){
-                    //TEM QUE DEFINIR AINDA QUAL OUTRA TELA VEM AQUI
+                    chamadaTela();
                 }
 
             });
 
+
             //Passo 2: criar uma nova cena com o grid
             Scene scene = new Scene(grid,500,300); //criado uma cena
             stageInicial.setScene(scene); //definido a cena criada no prjeto
+
+            //Passo 9: LIDANDO COM O TECLADO
+            scene.addEventFilter(KeyEvent.KEY_PRESSED, new EventHandler<KeyEvent>() {
+                @Override
+                public void handle(KeyEvent event) {
+                    if(event.getCode() == KeyCode.ENTER){
+                        botao.fire();
+                    }
+                }
+            });
 
             //Abaixo segue o código para pegar as informações em CSS do arquivo CssLogin na mesma pasta
             scene.getStylesheets().add(FantoMatrix.class.getResource("CssLogin.css").toExternalForm());

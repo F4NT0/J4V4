@@ -2,9 +2,9 @@
   -fx-background-image: url("black-color.jpg");
 }
 
-.Text{
+.Label2{
+   -fx-text-fill: red;
    -fx-font-size: 16px;
-   -fx-font-wight: bold;
 }
 
 .areaDeTexto{
@@ -34,4 +34,18 @@
 .Label{
     -fx-text-fill: limegreen;
     -fx-font-size: 14px;
+}
+
+.botaoEncerrar{
+    -fx-text-fill: red;
+    -fx-control-innet-background: black;
+    -fx-background-color: black;
+    -fx-border-color: red;
+}
+
+.botaoCalcular{
+    -fx-text-fill: forestgreen;
+    -fx-control-innet-background: black;
+    -fx-background-color: black;
+    -fx-border-color: forestgreen;
 }
