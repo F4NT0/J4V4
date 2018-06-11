@@ -231,7 +231,7 @@ public class SegundaTela extends Application{
 
         //Testando se o Gif existe
 
-        Image imagem = new Image(new FileInputStream("C:\\Users\\fanto\\Desktop\\Programa Java\\Java_Basics\\JavaFX\\TesteJavaFx\\src\\matrixCube.gif"));
+        Image imagem = new Image(new FileInputStream("C:\\Users\\16105016\\Desktop\\Java_Basics\\JavaFX\\TesteJavaFx\\src\\matrixCube.gif"));
 
        //adicionando o gif no sistema
         ImageView imageView = new ImageView(imagem);
@@ -305,6 +305,7 @@ public class SegundaTela extends Application{
                 }
                 if(event.getCode() == KeyCode.ESCAPE){//TECLA ESC FECHA O PROGRAMA
                     segundaTela.close();
+
                 }
             }
         });

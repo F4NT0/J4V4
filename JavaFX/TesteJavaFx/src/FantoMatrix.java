@@ -125,7 +125,6 @@ public class FantoMatrix extends Application{
 
             //Passo 8: LIDANDO COM O EVENTO DE CLICAR BOTÃO(No formato de Lambda)
             botao.setOnAction(e -> {
-                verSenha(areaDaSenha, textoDeAcao);
                 if(verSenha(areaDaSenha,textoDeAcao)){
                     chamadaTela();
                 }
@@ -143,6 +142,9 @@ public class FantoMatrix extends Application{
                 public void handle(KeyEvent event) {
                     if(event.getCode() == KeyCode.ENTER){
                         botao.fire();
+                    }
+                    if(event.getCode() == KeyCode.ESCAPE){
+                        stageInicial.close();
                     }
                 }
             });
