@@ -1,7 +1,7 @@
 import java.util.HashMap;
 import java.util.Map;
 
-public class TesteMaps {
+public class HashMaps {
     public static void main(String[] args){
         //INICIANDO UM HASHMAP NOVO
         //Map<Chave,Informação> nomeMap = new HashMap<Chave,Informação>();

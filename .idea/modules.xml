@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Java_Basics.iml" filepath="$PROJECT_DIR$/Java_Basics.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Object_Orientation/Lambdas.iml" filepath="$PROJECT_DIR$/Object_Orientation/Lambdas.iml" />
       <module fileurl="file://$PROJECT_DIR$/Object_Orientation/Object_Orientation.iml" filepath="$PROJECT_DIR$/Object_Orientation/Object_Orientation.iml" />
     </modules>
   </component>
