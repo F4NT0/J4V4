@@ -12,6 +12,6 @@ Os **Códigos** de Teste sobre a Linguagem Java Orientada a Objetos se Encontra 
 
 ---
 
-![alt text](https://imasters.com.br/wp-content/uploads/2018/03/JV.jpg)
+![Java icone](https://cdn0.iconfinder.com/data/icons/simple-icons-4/512/java.png)
 
 
